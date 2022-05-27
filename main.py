@@ -1,14 +1,9 @@
-def insert(lst, number, stroka):
-    if number > len(lst) and number != 0:
-        print("operation is not posibble")
-    else:
-        lst.insert(number - 1, stroka)
+def insert():
+    a = input("Строка для вставки: ").split()
+    b = input("Подстрока: ")
+    n = len(a)
+    i = n//2
+    a.insert(a,b)
+    print(a)
 
-    print(lst)
-
-
-lst = ["oao", "aoa", "aao", "oaa", "ttt"]
-number = 3
-stroka = "list"
-
-insert(lst, number, stroka)
+insert()
